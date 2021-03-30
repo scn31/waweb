@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  </style>
+</head>
+<body style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"> 
+<h2>WhatsApp to Unsaved Number</h2>
+<form action="https://api.whatsapp.com/send?">
+  <label for="fname">Mobile Number:</label>
+  <i>(include country code)</i>
+  <br><br>
+  <input type="number" id="phone" name="phone" value="91" style="font-size:24px" autocomplete="off"><br><br>
+<button style="font-size:16px">Go</button>
+<br><i>Clicking 'Go' will open WhatsApp chat window to the provided mobile number.</i>
+</form>
+</body>
+</html>
